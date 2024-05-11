@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tatooine</title>
+
+  <link rel="stylesheet" href="./css/styles-sitio.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+
+  <!-- Script for eMail.js -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "7s-4sv3lXPVIQIq2o",
+      });
+    })();
+  </script>
+
+  <!-- CSS de Glide.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+  <!-- Estilos adicionales (opcional) -->
+  <style>
+    .glide {
+      width: 100%;
+      height: 300px;
+    }
+
+    .glide__slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center text vertically */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="container">
+
+      <div class="contenedor-header">
+
+        <div class="row barra-superior">
+
+          <div class="col-4 mt-4 mb-2">
+            <img src="./img/Sitio/logo-blanco.png" alt="">
+          </div>
+
+          <span class="col-1"></span>
+          <ul class="col-7 d-flex justify-content-between align-items-center text-white">
+
+            <li class="li-item"><a class="" href="#hero">Inicio</a></li>
+            <li class="li-item"><a class="" href="#caracteristicas">Caracteristicas</a></li>
+            <li class="li-item"><a href="#planes-section">Planes</a></li>
+            <li class="li-item"><a href="#contacto-section">Contactenos</a></li>
+            <li><a href="https://www.tatooine.com.ar/" class="btn-verde">Ingresar</a></li>
+            <li> <a id="btn-registro" class="btn-transparente" data-bs-toggle="modal"
+                data-bs-target="#form-us">Registrarse</a> </li>
+
+          </ul>
+
+        </div>
+
+        <div class="row">
+
+          <div class="titulos-left col-6">
+
+            <h1 class="titulo-principal">Inteligencia aplicada a los procesos de tu industria</h1>
+
+            <h5 class="titulo-bajada">Una aplicación integral para gestión industrial que
+              controla órdenes de trabajo, inventarios, genera reportes y formulación de productos, optimizando procesos
+              y
+              aumentando la eficiencia operativa.</h5>
+
+            <div class="titulo-buttons d-flex justify-content-start">
+
+              <a href="#about" class="btn-verde" style="cursor: pointer; z-index: 30;">Probar gratis</a>
+              <a href="#about" class="btn-transparente" style="margin-left: 20px; z-index: 30;"><i
+                  class="bi bi-play-circle" style="margin-right: 5px !important;"></i>Ver Video</a>
+
+            </div>
+          </div>
+
+          <div class="col-6 img-titulos">
+            <img src="./img/Sitio/cerebro-1.png" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <svg class="w-100 base-titulos" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10">
+      <path fill="#FFFFFF" d="M0,0 L0,100 L100,10 Q50,1 0,10 Z"></path>
+    </svg>
+  </header>
+
+  <main>
+
+    <!-- ======= caracteristicas Section ======= -->
+    <section class="pb-4" style="background-color: whitesmoke;">
+
+      <div class="container">
+
+        <div id="caracteristicas" class="row mt-2 caracteristicas">
+
+          <h1 class="text-center mt-4 titulos-section">Caracteristicas</h1>
+          <div class="row">
+            <img src="./img/Sitio/lineas-titulos.png" class="mx-auto col-3" alt="">
+          </div>
+
+          <p class="mt-4">Cuenta con una variedad muy grande de caracteristicas, puedes gestionar las
+            ordenes de trabajo desde
+            cualquier dispositivo,
+            distintas modalidades de usuarios (administrador, operario, deposito, etc), cuanta con la posibilidad de
+            generar etiquetas QR para gestionar salida de productos informacion de las ordenes
+            de tabajo. Planificacion, control de stock, reportes, y todo en tiempo Real y desde cualquier lugar
+          </p>
+
+        </div>
+
+        <div class="row mt-4 equal-height-cards card-caracteristicas" style="margin-bottom: 40px;">
+
+          <div class="col-3">
+            <div class="card mb-3 d-flex flex-column justify-content-between tarjeta-caracteristicas">
+              <div class="d-flex flex-column justify-content-start align-items-center">
+                <i class="bi bi-cloud mt-2"></i>
+                <h4 classs="mt-2">Cloud Factory</h4>
+                <p class="p-2 text-center">Gestiona toda la informacion en la nube, en cualquier lado que te encuentres
+                  puedes monitorear el
+                  estado de los procesos</p>
+              </div>
+              <div class="row d-flex justify-content-center mb-3">
+                <div class="linea-cierre"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card mb-3 d-flex flex-column justify-content-between tarjeta-caracteristicas">
+              <div class="d-flex flex-column justify-content-start align-items-center">
+                <i class="bi bi-bar-chart-line mt-2"></i>
+                <h4 class="mt-2">Reportes</h4>
+                <p class="p-2 text-center">Obtene toda la informacion necesaria para optimizar la gestion de tus
+                  procesos</p>
+              </div>
+              <div class="row d-flex justify-content-center mb-3">
+                <div class="linea-cierre"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card mb-3 d-flex flex-column justify-content-between tarjeta-caracteristicas">
+              <div class="d-flex flex-column justify-content-start align-items-center">
+                <i class="bi bi-clock mt-2"></i>
+                <h4 class="mt-2">Tiempo Real</h4>
+                <p class="p-2 text-center">Mira las actualizaciones de las ordenes de trabajo en tiempo real y desde
+                  cualquier dispositivo en el
+                  que
+                  estes conectado.</p>
+              </div>
+              <div class="row d-flex justify-content-center mb-3">
+                <div class="linea-cierre"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card mb-3 d-flex flex-column justify-content-between tarjeta-caracteristicas">
+              <div class="d-flex flex-column justify-content-start align-items-center">
+                <i class="bi bi-qr-code mt-2"></i>
+                <h4 class="mt-2">Codigos QR</h4>
+                <p class="p-2 text-center">Genera salidas de productos e información de las ordenes de trabajos con la
+                  aplicacion de QR desde el
+                  celular</p>
+              </div>
+              <div class="row d-flex justify-content-center mb-3">
+                <div class="linea-cierre"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- End Caracteristicas Section -->
+
+
+    <section id="section-funcionalidades-1" class="section-funcionalidades active" style="background-color: white;">
+
+      <h1 class="text-center mt-4 titulos-section">Funcionalidades</h1>
+
+      <div class="row">
+        <img src="./img/Sitio/lineas-titulos.png" class="mx-auto col-3" alt="">
+      </div>
+
+      <div class="row" style="height: 500px;">
+        <div class="glide">
+
+          <div class="glide__track" data-glide-el="track">
+
+            <ul class="glide__slides pt-5 pb-5">
+
+              <li class="glide__slide">
+                <div class="container mt-2" style="background-color: whitesmoke;">
+
+                  <div class="row funcionalidades">
+
+                    <div class="col-6 mt-5" style="margin-left: 40px;">
+                      <h5 class="titulo-principal-roles">APROVECHE AL MÁXIMO
+                        LOS ROLES EN NUESTRO SERVICIO.</h5>
+                      <p class="detalle-roles mt-4">Una de las características más destacadas de nuestro servicio es la
+                        capacidad de aprovechar los ROLES proporcionados por Tatooine. Esta
+                        funcionalidad es clave para optimizar las responsabilidades de cada
+                        usuario dentro de su empresa y permita potenciar el desempeño de
+                        su equipo y contribuyan al éxito de sus operaciones comerciales.</p>
+                      <img class="logo-roles mt-4 mb-2" src="./img/Sitio/logo-azul.png" alt="">
+                    </div>
+
+                    <div class="col-5">
+                      <img class="img-fluid" src="./img/Sitio/roles-figura.png" alt="">
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="glide__slide">
+                <div class="container mt-2" style="background-color: whitesmoke;">
+
+                  <div class="row funcionalidades">
+
+                    <div class="col-6 mt-5" style="margin-left: 40px;">
+                      <h5 class="titulo-principal-roles">MEJORE LA GESTIÓN
+                        DEL INVENTARIO DE
+                        TU EMPRESA</h5>
+                      <p class="detalle-roles mt-4">Con nuestra aplicacion podras gestionar los inventarios de de cada
+                        componente de tus productos.
+                        Podras controlar stock real y stock virtual, generar altas y salidas de productos, partes,
+                        materias primas e insumos
+                        para que tu gestion de la porduccion y sea mas eficiente todavia
+                      </p>
+                      <img class="logo-roles mt-4 mb-2" src="./img/Sitio/logo-azul.png" alt="">
+                    </div>
+
+                    <div class="col-5">
+                      <img class="img-fluid-2" src="./img/Sitio/control-de-stock-figura.png" alt="">
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="glide__slide">
+                <div class="container mt-2" style="background-color: whitesmoke;">
+
+                  <div class="row funcionalidades">
+
+                    <div class="col-6 mt-5" style="margin-left: 40px;">
+                      <h5 class="titulo-principal-roles">OPTIMICE EL
+                        SEGUIMIENTO DE
+                        GESTIÓN DE TAREAS</h5>
+                      <p class="detalle-roles mt-4">Podra obtener un control integral y preciso de cada orden de
+                        trabajo que genere y tambien podra controlar el seguimiento
+                        detallado y en tiempo real. Tendrá acceso al porcentaje de
+                        progreso de cada tarea, asegurando así la eficiencia óptima
+                        en todos los procesos operativos.</p>
+                      <img class="logo-roles mt-4" src="./img/Sitio/logo-azul.png" alt="">
+                    </div>
+
+                    <div class="col-5">
+                      <img class="img-fluid-1" src="./img/Sitio/Seguimiento-procesos-figura-1.png" alt="">
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="base-funcionalidades">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+
+    </section>
+    <!-- End Funcionalidades Section -->
+
+    <!-- Section Plataformas -->
+
+    <section id="section-plataformas" style="background-color:#122960; margin-top: -1px;">
+
+      <div class="container">
+
+        <div class="row plataformas">
+
+          <div class="col-7">
+            <img class="img-plataformas" src="./img/Sitio/plataformas-figura.png" alt="">
+          </div>
+
+          <div class="col-5 titulos-plataforma">
+            <h5 class="titulo-principal-plataformas">NUESTRAS PLATAFORMAS</h5>
+            <p class="detalle-plataformas mt-4"> Utiliza los diferentes dsipositivos que esten a tu alcance para poder
+              optimizar los procesos de produccion
+              de tu empresa
+              Tatooine te permite usar cualquier dispositivo con el siguiente porcentaje</p>
+
+            <div class="row mt-4 d-flex flex-column justify-content-between" style="margin-left: 50px;">
+
+              <div class="mb-3">
+                <div class="mb-2 titulo-progress">
+                  <i class="bi bi-pc-display-horizontal"> DESKTOP</i>
+                  <p>100%</p>
+                </div>
+
+                <div class="borde-progress-bar">
+                  <div class="progress-bar">
+                    <div class="barra-progress" style="width: 100%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="mb-2 titulo-progress">
+                  <i class="bi bi-tablet"> TABLET</i>
+                  <p>100%</p>
+                </div>
+
+                <div class="borde-progress-bar">
+                  <div class="progress-bar">
+                    <div class="barra-progress" style="width: 100%;" ;></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="mb-2 titulo-progress">
+                  <i class="bi bi-phone"> MOVIL</i>
+                  <p>75%</p>
+                </div>
+
+                <div class="borde-progress-bar">
+                  <div class="progress-bar">
+                    <div class="barra-progress" style="width: 75%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="mb-2 titulo-progress">
+                  <i class="bi bi-music-player"> HANDHELD</i>
+                  <p>75%</p>
+                </div>
+
+                <div class="borde-progress-bar">
+                  <div class="progress-bar">
+                    <div class="barra-progress" style="width: 75%;"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="base-plataformas">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <g transform="scale(1, -1) translate(0, -120)">
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill-plataformas"></path>
+          </g>
+        </svg>
+      </div>
+
+    </section>
+    <!-- End Plataformas Section -->
+
+    <!-- Planes Section  -->
+
+    <section id="planes-section" class="planes-section" style="background-color: whitesmoke; padding-bottom: 60px;">
+
+      <div class="container" style="margin-top: 90px;">
+
+        <h1 class="text-center titulos-section pt-3">Planes</h1>
+        <div class="row">
+          <img src="./img/Sitio/lineas-titulos.png" class="mx-auto col-3 mb-5" alt="">
+        </div>
+        <p class="detalle-planes">
+          Selecciona el plan más conveniente para tu industria. Contamos con un plan gratuito para que conozcas la
+          funcionalidad de nuestro servicio,
+          luego contamos con un plan básico para que sumes mas herramientas y por último contamos con un plan premium
+          donde tendras todos los
+          servicios disponibles a tu alcance
+        </p>
+
+        <div class="row mt-4 equal-height-cards card-caracteristicas">
+
+          <div class="col-4">
+            <div class="card pt-4 mb-3 d-flex flex-column justify-content-between tarjeta-planes">
+              <h3 class="text-center titulo-plan">GRATIS</h3>
+
+              <div class="p-3 items-planes">
+                <div class="d-flex justify-content-between align-items-center mb-1 item">
+                  <p>Cantidad Ordenes</p>
+                  <p>30/Mes</p>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center mt-3 mb-1 item">
+                  <p>Operarios</p>
+                  <p>5</p>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center mt-3 mb-1 item">
+                  <p>Roles Operarios</p>
+                  <p>Si</p>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center mt-3 mb-1 item">
+                  <p>Soporte Tecnico</p>
+                  <p>N/D</p>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center mt-3 mb-1 item">
+                  <p>Configuracion Inicial</p>
+                  <p>N/D</p>
+                </div>
+                <hr>
+              </div>
+
+              <div class="text-center contenedor-precios">
+                <p class="precio">u$s 0.00</p>
+                <p class="mb-2 detalle-precio">---</p>
+              </div>
+
+              <div class="row pb-4">
+
+                <span class="col-3"></span>
+
+                <a class="col-6 btn-azul text-center">Comenzar</a>
+
+                <span class="col-3"></span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-4">
+
+            <div class="card pt-4 mb-3 d-flex flex-column justify-content-between tarjeta-planes">
+              <h3 class="text-center titulo-plan">PRO</h3>
+
+              <div class="p-3 items-planes">
+                <div class="d-flex justify-content-between align-items-center mb-1 item">
+                  <p>Cantidad Ordenes</p>
+                  <p>Ilimitadas</p>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center mt-3 mb-1 item">
+                  <p>Operarios</p>
+                  <p>Ilimitados</p>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center mt-3 mb-1 item">
+                  <p>Roles Operarios</p>
+                  <p>Si</p>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center mt-3 mb-1 item">
+                  <p>Soporte Tecnico</p>
+                  <p>eMail/Chat</p>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center mt-3 mb-1 item">
+                  <p>Configuracion Inicial</p>
+                  <p>Sin Cargo</p>
+                </div>
+                <hr>
+              </div>
+
+              <div class="text-center contenedor-precios">
+                <p class="precio">u$s 39.00</p>
+                <p class="mb-2 detalle-precio">Mas Iva/Mes</p>
+              </div>
+
+              <div class="row pb-4">
+
+                <span class="col-3"></span>
+
+                <a class="col-6 btn-azul text-center">Comenzar</a>
+
+                <span class="col-3"></span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-4">
+
+            <div class="card pt-4 mb-3 d-flex flex-column justify-content-between tarjeta-planes">
+              <h3 class="text-center titulo-plan">BASICO</h3>
+
+              <div class="p-3 items-planes">
+                <div class="d-flex justify-content-between align-items-center mb-1 item">
+                  <p>Cantidad Ordenes</p>
+                  <p>200/Mes</p>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center mt-3 mb-1 item">
+                  <p>Operarios</p>
+                  <p>30</p>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center mt-3 mb-1 item">
+                  <p>Roles Operarios</p>
+                  <p>Si</p>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center mt-3 mb-1 item">
+                  <p>Soporte Tecnico</p>
+                  <p>eMail/Chat</p>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center mt-3 mb-1 item">
+                  <p>Configuracion Inicial</p>
+                  <p>Basica</p>
+                </div>
+                <hr>
+              </div>
+
+              <div class="text-center contenedor-precios">
+                <p class="precio">u$s 19.00</p>
+                <p class="mb-2 detalle-precio">Mas Iva/Mes</p>
+              </div>
+
+              <div class="row pb-4">
+
+                <span class="col-3"></span>
+
+                <a class="col-6 btn-azul text-center">Comenzar</a>
+
+                <span class="col-3"></span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- End Planes Section -->
+
+    <!-- Inicio Recorda -->
+
+    <section id="section-recorda" style="background-color: #2EB2A9">
+
+      <div class="container pt-5 pb-5">
+
+        <div class="row">
+
+          <div class="col-10 contenedor-titulos-recorda">
+
+            <h2 class="titulo-recorda">
+              RECORDA
+            </h2>
+
+            <p class="detalle-recorda">
+              Siempre podes incorporar nuevas caracteristicas al sistema para que se adecuen especificamente a los
+              procesos
+              que
+              busques optimizar. No dudes en consultarnos para poder ofrecerte una solucion profesional dentro del
+              mercado.
+            </p>
+
+          </div>
+
+          <div class="col-2 d-flex flex-column justify-content-center pt-4">
+            <a class="btn btn-bstrap-azul " href="#contacto-section" role="button">Consultanos</a>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+    <!-- Fin Recorda Section -->
+
+    <!-- Preguntas Frecuentes Section -->
+
+    <section id="preguntas-section">
+
+      <div class="container" style="background-color: whitesmoke; margin-top: 60px; margin-bottom: 60px; ">
+
+        <h1 class="text-center titulos-section pt-3">Preguntas Frecuentes</h1>
+        <div class="row">
+          <img src="./img/Sitio/lineas-titulos.png" class="mx-auto col-3 mb-5" alt="">
+        </div>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button accordion-title collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                ¿ Cuanto es el tiempo de implementacion de la aplicacion en una empresa ?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                El tiempo de implementacion obviamente depende del tamaño de la empresa. pero Tatooine tiene un diseño
+                de configuracion tan bueno que minimiza completamente esos tiempos
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button accordion-title collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                ¿ Que tipo de empresas pueden beneficiarse con el uso de esta aplicacion ?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse accordion-title collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Toda empresa que tenga procesos de produccion se veran beneficiados con Tatooine, pueden ser de origen
+                industrial o comercial
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button accordion-title collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                ¿Cómo se integra esta aplicación con los sistemas existentes de gestión de la
+                empresa?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Tatooine esta construido con uan tecnologia REST - API que le permite ser consumida por aplicaciones de
+                terceros, la documentacion esta a disposicion de cualquier desarrollador que lo solicite
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button accordion-title collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                ¿Qué ventajas competitivas ofrece esta app en comparación con otras?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Es una aplicacion muy facil de usar, con un contenido de informacion muy alto y de muy facil acceso. La
+                configuracion es totalmente intuitiva y no necesita instalacion ya que esta en la nube y por lo tanto es
+                accesible desde cualquier lugar
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Fin Preguntas Frecuentes Section -->
+
+    <!-- AWS SECTION  -->
+
+    <section class="p-5" id="aws-section" style="background-color: whitesmoke;">
+
+      <div class="container">
+
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="titulo-aws">Tu informacion esta segura porque usamos</div>
+          <img src="./img/Sitio/logo-AWS.png" alt="">
+        </div>
+
+      </div>
+
+
+    </section>
+    <!-- FIN AWS SeCTION -->
+
+    <!-- CONTACTO SECTION -->
+    <section id="contacto-section" style="background-color: #122960; padding-bottom: 100px !important;">
+
+      <div class="container">
+
+        <h1 class="text-center titulos-section pt-3" style="color: aliceblue !important;">Contacto</h1>
+        <div class="row">
+          <img src="./img/Sitio/lineas-titulos.png" class="mx-auto col-3 mb-5" alt="">
+        </div>
+
+        <div class="row d-flex justify-content-between">
+
+          <div class="col-4 p-4 d-flex flex-column justify-content-around fondo-contacto">
+
+            <div class="row d-flex justify-content-center tipo-contacto">
+              <i class="bi bi-geo-alt col-1 d-flex justify-content-center align-items-center "></i>
+              <div class="datos-contacto col-7">
+                <h5>Direccion</h5>
+                <p>Tucuman 3333 Lanus Este - Buenos Aires Argentina</p>
+              </div>
+            </div>
+
+            <div class="row mt-3 d-flex justify-content-center tipo-contacto">
+              <i class="bi bi-envelope col-1 d-flex justify-content-center align-items-center "></i>
+              <div class="datos-contacto col-7">
+                <h5>eMail</h5>
+                <p>info@tatooine.com.ar</p>
+              </div>
+            </div>
+
+            <div class="row  mt-3 d-flex justify-content-center tipo-contacto">
+              <i class="bi bi-phone col-1 d-flex justify-content-center align-items-center "></i>
+              <div class="datos-contacto col-7">
+                <h5>Movil</h5>
+                <p>+ 54 11 5730-1987</p>
+              </div>
+            </div>
+
+
+            <div class="row mt-3 d-flex justify-content-center tipo-contacto">
+              <i class="bi bi-whatsapp col-1 d-flex justify-content-center align-items-center "></i>
+              <div class="datos-contacto col-7">
+                <h5>Whatsapp</h5>
+                <p>+54-9-11-57301987</p>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-7 pt-4 pb-4  fondo-contacto">
+
+            <form id="form_contact" class="row needs-validation" novalidate>
+
+              <div class="form-floating col-8 mb-2">
+                <input id="from_name" type="text" class="mb-2 form-control input-contacto" maxlength="30" required>
+                <label for="from_name" class="form-label" style="margin-left: 2%;">Nombre</label>
+                <div class="invalid-feedback">
+                  Necesita ingresar un nombre
+                </div>
+              </div>
+
+              <div class="form-floating col-8 mb-2">
+                <input id="reply_to" type="email" class="mb-2 form-control input-contacto" maxlength="30" required>
+                <label for="reply_to" class="form-label" style="margin-left: 2%;">E mail</label>
+                <div class="invalid-feedback">
+                  Necesita ingresar un eMail
+                </div>
+              </div>
+
+              <div class="form-floating col-12">
+                <textarea id="message_contact" class="mb-1 form-control input-contacto" maxlength="255" required
+                  style="height: 128px; padding-top: 30px;"></textarea>
+                <label for="message_contact" class="form-label" style="margin-left: 2%;">Mensaje</label>
+                <div class="invalid-feedback">
+                  Necesita ingresar un mensaje
+                </div>
+              </div>
+
+              <div id="alerta-enviando-email" class="mb-0 mt-4 pl-2 pr-2 border rounded w-100 d-none"
+                style="background-color:#2EB2A9;">
+                <div class="row d-flex align-items-center">
+                  <div id="mensaje-envio" class="mb-0 text-white pt-2 pb-2"><strong>Envíando.....!</strong></div>
+                </div>
+              </div>
+
+              <div id="alerta-envio-email" class="mb-0 mt-4 border rounded w-100 d-none"
+                style="background-color:#122960 ">
+                <div class="row d-flex align-items-center">
+                  <div class="mb-0 text-white pt-2 pb-2"><strong>Envío de email exitoso!</strong></div>
+                </div>
+              </div>
+
+              <div id="alerta-fallo-envio-email" class="bg-danger mb-0 mt-4 border rounded w-100 d-none">
+                <div class="row d-flex align-items-center">
+                  <div class="mb-0 text-white pt-2 pb-2"><strong>Fallo envio de email!</strong></div>
+                </div>
+              </div>
+
+              <div id="div-btn-email" class="d-flex justify-content-center mt-4">
+                <button class="btn-azul" id="btnEmail">Enviar email</button>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+    <!-- FIN CONTACTO SECTION -->
+
+    <!-- INICIO SUSCRIBETE SECTION   -->
+
+    <section id="suscribete" style="background-color: #2EB2A9;">
+
+      <div class="container">
+
+        <div class="row text-center pt-5 pb-4 contenedor-newsletter">
+
+          <h1 class="mb-2 titulo-newsletter">
+            SUSCRIBETE AL NEWSLETTER
+          </h1>
+
+          <p>Registra tu email y recibe todas las novedades sobre Tatooine y la industria</p>
+
+          <div class="d-none" id="mensaje-suscripcion-ok">
+            <h4 class="mb-2 mt-4 thanks-newsletter">
+              GRACIAS POR SUSCRIBIRTE
+            </h4>
+          </div>
+
+          <div class="mt-4 contenedor-input-newsletter" id="contenedor-input-newsletter">
+            <input type="email" id="email-newsletter" name="email" class="input-nl">
+            <button id="btn-suscribirse" class="btn-suscribirse">Suscribirse</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FIN SUSCRIBETE SECTION -->
+
+  </main>
+
+  <footer>
+
+    <!--  FOOTER SECTION  -->
+
+    <section id="FOOTER-SECTION">
+
+      <div class="container">
+
+        <div class="row pt-4 pb-4 contenedor-footer">
+
+          <div class="col-4 col-footer-left">
+
+            <img class="logo-roles" src="./img/Sitio/logo-azul.png" alt="">
+            <p class="pt-2 descripcion-footer">Optimiza procesos y calidad en la producción para impulsar el éxito
+              empresarial.</p>
+
+          </div>
+
+          <div class="col-4 pt-1 col-footer-middle">
+
+            <h3>Servicios</h3>
+            <ul>
+              <li> Seguimiento Ordenes de Trabajo</li>
+              <li> Reportes Tiempo Real</li>
+              <li>Formulacion Productos</li>
+              <li>Control Stock</li>
+              <li>Alerta de incidencias</li>
+            </ul>
+
+          </div>
+
+          <div class="col-4 pt-1 col-footer-right">
+
+            <h3>Nosotros</h3>
+            <p>Tucuman 3333 Lanus este - Buenos Aires Arhgentina</p>
+            <p>Telegono : +54 11 57301987</p>
+            <p>eMail : info@tatooine.com.ar</p>
+
+          </div>
+
+        </div>
+        <hr>
+
+        <div class="d-flex justify-content-between align-items-center p-2 copyredes">
+          <p cllass="">© 2024 <strong>TATOOINE</strong> Todos los derechos reservados.</p>
+          <div class="redes">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+          </div>
+        </div>
+
+
+      </div>
+
+      </sectionN>
+      <!--  FIN FOOTER SECTION -->
+
+  </footer>
+
+  <!-- Modal formulario de registro -->
+
+  <div class="modal fade in" id="form-us" tabindex="-1" data-backdrop="true" data-keyboard="true" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-" role="document">
+      <div class="modal-content">
+        <div class="modal-header d-flex justify-content-center">
+          <h4 id="titulo-modal-us">Alta de Usuarios</h4>
+        </div>
+
+        <div class="modal-body">
+          <form id="formUS" class="row needs-validation" novalidate>
+            <div class="form-floating col-12 mb-3 pl-4">
+              <input id="nombreUS" type="text" class="form-control pl-4" maxlength="30" required>
+              <label for="nombreUS" class="form-label pl-4 ml-4">Nombre</label>
+              <div class="invalid-feedback">
+                Necesita ingresar un nombre
+              </div>
+            </div>
+            <div class="form-floating col-12 mb-3">
+              <input id="apellidoUS" type="text" class="form-control" maxlength="20" required>
+              <label for="apellidoUS" class="form-label pl-1">Apellido</label>
+              <div class="invalid-feedback">
+                Necesita ingresar un apellido
+              </div>
+            </div>
+              
+            <div class="form-floating col-12 mb-3">
+              <input id="usuario_us" type="email" class="form-control" maxlength="50" required  value="">
+              <label for="usuario_us" class="form-label ml-1">Email</label>
+              <div class="invalid-feedback">
+                Necesita ingresar un eMail valido
+              </div>
+            </div>
+
+        
+
+            <div class="form-floating col-12 mb-3">
+              <input id="telefonoUS" type="number" class="form-control" maxlength="13">
+              <label for="telefonoUS" class="form-label ml-1">Telefono</label>
+            </div>
+
+
+            <div class="form-floating col-12 mb-3">
+              <input id="passwordUS" type="password" class="form-control" minlength="8" maxlength="8" >
+              <label for="passwordUS" class="form-label ml-1">Password</label>
+              <div class="invalid-feedback">
+                Necesita ingresar una contraseña
+              </div>
+            </div>
+
+            <div class="form-floating col-12">
+              <select id="selectpais" class="text-xs text-gray-600 form-select form-select-lg mb-3" required>
+                <option selected disable value></option>
+              </select>
+              <label for="selectpais" class="form-label ml-1">Pais</label>
+              <div class="invalid-feedback">
+                Necesita Seleccionar un pais
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="form-floating col-12 mb-3 mt-3">
+              <input id="empresa" type="text" class="form-control" maxlength="50" required>
+              <label for="empresa" class="form-label ml-1">Telefono</label>
+              <div class="invalid-feedback">
+                Necesita ingresar una empresa
+              </div>
+            </div>
+
+            <div class="form-floating col-12 mb-3">
+              <input id="cuit" type="text" class="form-control" maxlength="13" required>
+              <label for="cuit" class="form-label ml-1">Cuit</label>
+              <div class="invalid-feedback">
+                Necesita ingresar un cuit valido
+              </div>
+            </div>
+
+            <!--  <div id="alerta-us" class="alert alert-success alert-dismissible pl-4 mb-0 w-100 d-none"
+                        role="alert">
+                        <div class="row">
+                            <p class="col-3 mb-0 mr-0"><strong>Transaccion Exitosa</strong>
+                            </p>
+                            <p class="col-5 pb-0 mb-0" id="mensaje-us"></p>
+                            <button id="boton-cerrar-alert-us" type="button" class="btn-close col-4"
+                                data-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+ -->
+            <div id="modal-botones-us" class="d-flex justify-content-center align-items-center">
+              <button type="submit" id="boton-aceptar-us" class="btn btn-primary col-4">Aceptar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+  <!-- JavaScript de Glide.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+  <script>
+    // Inicializar Glide
+    new Glide('.glide', {
+      type: 'slider', // Tipo de slider
+      perView: 1, // Número de elementos a mostrar en una vista
+      focusAt: 'center', // Elemento en el que enfocarse cuando se desliza
+      gap: 30, // Espacio entre elementos
+      autoplay: 3000, // Autoreproducción cada 3 segundos
+      hoverpause: false,
+      animationDuration: 800, // Duración de la animación en milisegundos
+      breakpoints: { // Breakpoints para diseño responsivo
+        768: {
+          perView: 2 // Cambiar a 2 elementos por vista en pantallas más grandes
+        }
+      }
+    }).mount();
+  </script>
+
+  <script>
+    // Esto es la validacion de formularios manejada por Bootstrap, va en cada modulo html x una cuestion spa
+    (() => {
+
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', (event) => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+          event
+            .preventDefault() // Ojo este prevent default lo agregue yo 
+        }, false)
+      })
+    })()
+  </script>
+
+  <script src="./js/sources/app-sitio.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,773 @@
+/**********************************/
+/*     INICIALIZACION PAGINA      */
+/**********************************/
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Establecer una tipografía predeterminada */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  padding: 0;
+  background-color: white;
+  max-width: 2100px;
+  margin: 0 auto !important;
+   overflow-x: hidden;   
+}
+
+
+/* Establecer estilos para enlaces */
+a {
+  text-decoration: none !important;
+  color: aliceblue !important;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0px !important;
+}
+
+h3, h4, h5{
+  margin-bottom: 0px !important;
+}
+
+p{
+  margin-bottom: 0px !important;
+}
+
+hr{
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+/**************************/
+/* Estilos Clases Comunes */
+/**************************/
+
+.btn-verde {
+  background-color: #2EB2A9;
+  border: #2EB2A9;
+  color: aliceblue;
+  border-radius: 30px;
+  padding: 8px 30px 8px 30px;
+  cursor: pointer;
+}
+
+
+.btn-verde:hover {
+background-color: #18a39a;  
+}
+
+
+.btn-transparente {
+  border: 1px solid #2EB2A9;
+  color: aliceblue;
+  border-radius: 30px;
+  padding: 8px 30px 8px 30px;
+  cursor: pointer;
+}
+
+
+.btn-transparente:hover {
+  border: 1px solid #122960;
+  background-color: #294ca0;
+  
+}
+
+
+.btn-azul {
+  border: 1px solid #122960;
+  background-color: #122960;
+  color: aliceblue;
+  border-radius: 30px;
+  padding: 8px 20px 8px 20px;
+  cursor: pointer;
+}
+
+.btn-azul:hover {
+  background-color: #294ca0;
+}
+
+
+
+.btn-bstrap-azul {
+  background-color: #122960 !important;
+  color: aliceblue !important;
+  border-radius: 30px !important;
+  cursor: pointer;
+}
+
+
+
+.btn-bstrap-azul:hover {
+  background-color: #294ca0 !important;
+}
+
+
+.equal-height-cards .card {
+  height: 100%;
+  /* Establece una altura del 100% */
+}
+
+.titulos-section {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 38px;
+  color: #122960;
+}
+
+/**************************/
+/* Estilos Header desktop */
+/**************************/
+
+header {
+  background-color: #122960;
+}
+
+.barra-superior {
+  background-color: #122960;
+  font-size: 18px;
+}
+
+.barra-superior li {
+  position: relative;
+}
+
+
+.barra-superior .li-item:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Ajusta el valor según sea necesario para el espacio deseado */
+  width: 100%;
+  border-bottom: 3px solid; /* Puedes personalizar el estilo de la línea subrayada aquí */
+}
+
+
+.titulos-left {
+  margin-top: 70px !important;
+}
+
+
+.titulo-principal {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 42px !important;
+  color: aliceblue !important;
+}
+
+
+.titulo-bajada {
+  color: aliceblue;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.titulo-buttons {
+  margin-top: 100px !important;
+}
+
+.img-titulos {
+  margin-top: 30px !important;
+  z-index: 10;
+}
+
+.base-titulos {
+  margin-top: -100px !important;
+}
+
+/* CARACTERISTICAS SECTION */
+
+
+.caracteristicas h1 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 38px;
+  color: #122960;
+}
+
+.card {
+cursor: grab;
+}
+
+.card-caracteristicas i {
+  color: #2EB2A9;
+  font-size: 52px;
+}
+
+.card-caracteristicas h4 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 18px;
+  color: #2EB2A9;
+}
+
+.card-caracteristicas .linea-cierre {
+  width: 40%;
+  height: 3px;
+  background-color: #1F45A0;
+  border-radius: 35px;
+}
+
+/* HOVER EN TARJETAS CARACTERISTICAS */
+.tarjeta-caracteristicas:hover:hover{
+background-color:#122960;
+}
+
+.tarjeta-caracteristicas:hover i{
+  color: aliceblue;
+}
+
+.tarjeta-caracteristicas:hover p{
+  color: aliceblue;
+}
+
+.tarjeta-caracteristicas:hover .linea-cierre{
+  background-color: #2EB2A9;
+}
+/* FUNCIONALIDADES SECTION */
+
+.funcionalidades h1 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 38px;
+  color: #122960;
+}
+
+.funcionalidades .titulo-principal-roles {
+
+  font-family: 'Montserrat', sans-serif !important;
+  color: #122960;
+  font-size: 32px;
+  font-weight: 900 !important;
+}
+
+.funcionalidades p {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: normal;
+  font-size: 16px;
+  color: #1F45A0;
+}
+
+
+.funcionalidades .img-fluid {
+  max-height: 500px;
+  max-width: 661px;
+  position: relative;
+  margin-bottom: -50px;
+  margin-top: -100px;
+  z-index: 10;
+}
+
+
+.funcionalidades .img-fluid-1 {
+  max-height: 489px;
+  max-width: 470px;
+  position: relative;
+  margin-bottom: -50px;
+  margin-top: -70px;
+  z-index: 10;
+}
+
+
+.funcionalidades .img-fluid-2 {
+  max-width: 350px;
+  max-height: 463px;
+  position: relative;
+  margin-bottom: -50px;
+  margin-top: -70px;
+  z-index: 10;
+
+}
+
+.funcionalidades .logo-roles {
+  width: 160px;
+  height: 55px;
+}
+
+
+.base-funcionalidades {
+  margin-top: 40px;
+  width: 100%;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.base-funcionalidades svg {
+
+  width: calc(143% + 1.3px);
+  width: 100%;
+  height: 59px;
+  /*  transform: rotateY(180deg); */
+}
+
+.base-funcionalidades .shape-fill {
+  width: 100%;
+  fill: #122960;
+}
+
+/* PLATAFORMAS */
+
+.plataformas {
+  height: 580px;
+  min-height: 580px;
+}
+
+.plataformas .titulos-plataforma{
+  margin-top: 70px;
+}
+
+
+.plataformas .titulo-principal-plataformas {
+
+  font-family: 'Montserrat', sans-serif !important;
+  color: aliceblue;
+  font-size: 32px;
+  font-weight: 900 !important;
+}
+
+.plataformas .detalle-plataformas {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: normal;
+  font-size: 14px;
+  color: aliceblue;
+}
+
+.contenedor-progress {
+  margin-left: 30px;
+}
+
+.titulo-progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  color: aliceblue;
+  /* padding-bottom: 1px; */
+}
+
+.titulo-progress p {
+  margin-bottom: 0px;
+}
+
+.titulo-progress i {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.borde-progress-bar {
+  border: 1px solid #FFF;
+  padding: 3px;
+}
+
+.progress-bar {
+  width: 100%;
+  /* Ancho de la barra de progreso */
+  height: 10px;
+  /* Altura de la barra de progreso */
+  background-color: lightgrey;
+  /* Color de fondo de la barra de progreso */
+  border-radius: 1px;
+  /* Borde redondeado */
+}
+
+.barra-progress {
+  height: 100%;
+  background-color: #2EB2A9;
+  /* Color de la barra de progreso actual */
+  border-radius: 15px;
+  /* Borde redondeado */
+  /* Cambia este valor para ajustar el progreso */
+}
+
+
+.img-plataformas {
+ 
+  max-height: 639px;
+  max-width: 700px;
+  position: relative;
+  margin-top: 15px;
+  z-index: 10;
+
+}
+
+.base-plataformas {
+
+  display: block;
+  width: 100%;
+  line-height: 0;
+  transform: rotate(180deg);
+
+}
+
+
+.base-plataformas svg {
+  margin-top: -62px;
+  /*width: calc(143% + 1.3px); */
+  width: 100%;
+  height: 59px;
+  /*    transform: rotateY(180deg);  */
+
+}
+
+.base-plataformas .shape-fill-plataformas {
+  width: 100%;
+  fill: #122960;
+
+}
+
+
+/* PLANES */
+
+.detalle-planes {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.titulo-plan {
+  
+  font-family: 'Montserrat', sans-serif !important;
+  color: #122960;
+  font-size: 24px;
+  font-weight: 900 !important;
+
+}
+
+.item{
+  justify-content: space-between;
+  color: #1F45A0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 16px;  
+}
+
+.precio{
+  font-family: 'Montserrat', sans-serif !important;
+  color: #122960;
+  font-size: 24px;
+  font-weight: 900 !important;  
+}
+
+.detalle-precio{
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 10px;
+  color: #1F45A0;
+}
+
+
+.btn-planes {
+  border: 1px solid #122960;
+  background-color: #122960;
+  color: aliceblue;
+  border-radius: 30px;
+  padding: 8px 20px 8px 20px;
+}
+
+
+/* HOVER PLANES */
+
+.tarjeta-planes:hover{
+  cursor: grab;
+  background-color: #122960;
+}
+
+.tarjeta-planes:hover .titulo-plan{
+  color: aliceblue;
+}
+
+.tarjeta-planes:hover .item{
+  color: aliceblue;
+}
+
+.tarjeta-planes:hover hr{
+  color: aliceblue;
+}
+
+.tarjeta-planes:hover .precio{
+  color: aliceblue;
+} 
+
+.tarjeta-planes:hover .detalle-precio{
+  color: aliceblue;
+}
+
+
+.tarjeta-planes:hover .btn-azul {
+  border: 1px solid #2EB2A9 ;
+  background-color:#2EB2A9;
+  color: aliceblue;
+  border-radius: 30px;
+  padding: 8px 20px 8px 20px;
+  cursor: pointer;
+}
+
+
+/* RECORDA ESTILOS */
+
+.contenedor-titulos-recorda{
+  padding-right: 30px;
+}
+
+.titulo-recorda {
+  font-family: 'Montserrat', sans-serif !important;
+  color: aliceblue;
+  font-size: 24px;
+  font-weight: 900 !important;
+}
+
+.detalle-recorda {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: aliceblue;
+}
+
+/* PREGUNTAS FRECUENTES */
+
+.accordion {
+  width: 100% !important;
+  background-color: whitesmoke;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #1F45A0;
+ 
+}
+
+.accordion-title {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  color: #1F45A0 !important;
+  padding: 20px !important;
+  background-color: whitesmoke !important;
+}
+
+.accordion-body {
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #1F45A0;
+}
+
+/* AWS */
+.titulo-aws {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  color: #1F45A0 !important;
+}
+
+
+/* CONTACTO */
+.fondo-contacto{
+background-color: white;
+border: 1px solid #2EB2A9;
+}
+
+.datos-contacto{
+  color:#1F45A0;
+}
+
+.tipo-contacto i {
+  color: #2EB2A9;
+  font-size: 1.4rem;
+}
+
+.tipo-contacto p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #1F45A0;
+}
+
+.input-contacto{
+
+  border: 1px solid #1F45A0 !important;
+
+}
+
+/* SUSCRIBETE NEWSLETTER */
+
+.contenedor-newsletter h1 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 34px;
+  color: aliceblue;
+}
+
+.contenedor-newsletter p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: aliceblue;
+}
+
+
+.contenedor-input-newsletter {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* margin-top: 25px; */
+  margin-bottom: 25px;
+}
+
+
+.input-nl {
+  border: none;
+  /* border: 1px solid  #122960; */
+  border-radius: 30px;
+  outline: none;
+  width: 40%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  box-sizing: border-box;
+  color: #1F45A0 !important;
+  padding-left: 30px !important;  
+}
+
+
+.input-error{
+  border: 2px solid red;
+}
+
+.btn-suscribirse {
+  background-color: #122960;
+  color: aliceblue;
+  border-radius: 30px;
+  padding: 8px 30px 8px 30px;
+  margin-left: -5%;
+}
+
+
+.btn-suscribirse:hover {
+  background-color: #294ca0;
+}
+
+.contenedor-newsletter .thanks-newsletter{
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 24px;
+  color: #122960; 
+}
+
+/* FOOTER */
+
+.col-footer-left p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #1F45A0 !important;
+}
+
+.col-footer-middle{
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #1F45A0 !important;
+}
+
+.col-footer-middle h3{
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 24px;
+  color: #122960;  
+}
+
+.col-footer-middle ul{
+  list-style-type:disc;
+}
+
+.col-footer-right{
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #1F45A0 !important;
+}
+
+.col-footer-right h3{
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 24px;
+  color: #122960;
+}
+
+
+.copyredes p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #1F45A0 !important;
+}
+
+.copyredes .redes{
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #1F45A0 !important;
+}
+
+/******************************/
+/*      ANIMACIONES           */
+/******************************/
+
+/* IMAGEN CEREBRO */
+.img-titulos {
+  position: relative;
+  animation: subirYBajar 1s infinite alternate;
+  /* Animación que se repite infinitamente */
+}
+
+@keyframes subirYBajar {
+  0% {
+    transform: translateY(0);
+    /* La imagen está en su posición original */
+  }
+
+  100% {
+    transform: translateY(-15px);
+    /* La imagen se desplaza hacia arriba */
+  }
+}
+
+.desparecer-contenedor-input-newsletter {
+  animation: desaparecerDesdeIzquierda 0.5s forwards; /* Aplica la animación */
+}
+
+@keyframes desaparecerDesdeIzquierda {
+  from {
+    transform: translateX(0%); /* Mueve el elemento fuera de la pantalla */
+  }
+  to {
+    transform: translateX(-100%); /* Mueve el elemento hacia la posición original */
+  }
+}
+
+
+.aparecer {
+    animation: aparecerDesdeIzquierda 0.5s forwards; /* Aplica la animación */
+}
+
+@keyframes aparecerDesdeIzquierda {
+  from {
+    transform: translateX(100%); /* Mueve el elemento fuera de la pantalla */
+  }
+  to {
+    transform: translateX(0%); /* Mueve el elemento hacia la posición original */
+  }
+}
+
